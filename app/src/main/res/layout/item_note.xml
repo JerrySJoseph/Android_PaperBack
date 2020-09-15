@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_note"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/note_layout"
+        android:background="@drawable/bg_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/note_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            android:visibility="visible"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo Title"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                />
+            <TextView
+                android:id="@+id/note_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo Sub Title"
+                android:textStyle="italic"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/colorIcons"
+                android:textSize="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/note_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a demo of the text that will be shown at this point"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
